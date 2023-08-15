@@ -1,15 +1,20 @@
 package pro.sky.calculator;
 
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@RestController()
 public class CalculatorController {
     private final CalculatorService calculator;
     public CalculatorController(CalculatorServiceImpl calculator){
         this.calculator=calculator;
+    }
+    @GetMapping
+    public String hello(){
+        return calculator.hello();
     }
     @RequestMapping(path = "/calculator")
     public String calculator() {
