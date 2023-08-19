@@ -18,22 +18,21 @@ public class CalculatorController {
     public String calculator() {
         return calculator.calculator();
     }
-    @RequestMapping(path = "/plus")
+    @GetMapping (path = "/plus")
     public String calculatorPlus(@RequestParam (required = false) Integer num1, Integer num2) {
             return calculator.calculatorPlus(num1,num2);
         }
-    @RequestMapping(path = "/minus")
+    @GetMapping(path = "/minus")
     public String calculatorMinus(@RequestParam (required = false) Integer num1, Integer num2) {
             return calculator.calculatorMinus (num1,num2);
         }
-        @RequestMapping(path = "/multiply")
+    @GetMapping(path = "/multiply")
     public String calculatorMultiply(@RequestParam (required = false) Integer num1, Integer num2) {
             return calculator.calculatorMultiply(num1,num2);
         }
-    @RequestMapping(path = "/divide")
+    @GetMapping(path = "/divide")
     public String calculatorDivide(@RequestParam (required = false) Double num1, Double num2) {
         return calculator.calculatorDivide(num1,num2);
         }
-
     }
 

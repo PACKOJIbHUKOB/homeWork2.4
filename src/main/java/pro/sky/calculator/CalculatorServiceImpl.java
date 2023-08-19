@@ -20,7 +20,7 @@ public class CalculatorServiceImpl implements CalculatorService {
             return "ОШИБКА!! Введены не все данные";
         } else {
             return num1 + "+" + num2 + "=" + (num1 + num2)
-                    + "<p><a href=http://localhost:8080/calculator <a> Назад в калькулятор<p>";
+                    + "<p><a href=http://localhost:8080/calculator </a> Назад в калькулятор<p>";
         }
     }
 
@@ -29,7 +29,7 @@ public class CalculatorServiceImpl implements CalculatorService {
             return "ОШИБКА!! Введены не все данные";
         } else {
             return num1 + "-" + num2 + "=" + (num1 - num2)
-                    + "<p><a href=http://localhost:8080/calculator <a> Назад в калькулятор<p>";
+                    + "<p><a href=http://localhost:8080/calculator </a> Назад в калькулятор<p>";
         }
     }
 
@@ -38,7 +38,7 @@ public class CalculatorServiceImpl implements CalculatorService {
             return "ОШИБКА!! Введены не все данные";
         } else {
             return num1 + "*" + num2 + "=" + (num1 * num2)
-                    + "<p><a href=http://localhost:8080/calculator <a> Назад в калькулятор<p>";
+                    + "<p><a href=http://localhost:8080/calculator </a> Назад в калькулятор<p>";
         }
     }
 
